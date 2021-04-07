@@ -26,5 +26,5 @@ third_stddev_start, third_stddev_end = mean - (3 * deviation), mean + (3 * devia
 listofthird_stddev = [result for result in height if result > third_stddev_start and result < third_stddev_end]
 print("{}%".format(len(listofthird_stddev) * 100 / len(height)))
 
-graph = ff.create_distplot([height], ["Writing Score"])
+graph = ff.create_distplot([height], ["Writing Score"], show_hist=False)
 graph.show()
